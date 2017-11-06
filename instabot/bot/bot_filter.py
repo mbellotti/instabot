@@ -11,14 +11,14 @@ from .bot_support import console_print
 # their medias anymore
 def skippedlist_adder(self, user_id):
     # user_id = self.convert_to_user_id(user_id)
-    skipped = self.read_list_from_file("skipped.txt")
-    if user_id not in skipped:
-        with open('skipped.txt', "a") as file:
-            console_print(self.verbosity, '\n\033[93m Add user_id %s to skippedlist : skipped.txt ... \033[0m'
-                          % user_id)
+    # skipped = self.read_list_from_file("skipped.txt")
+    # if user_id not in skipped:
+    #    with open('skipped.txt', "a") as file:
+    #        console_print(self.verbosity, '\n\033[93m Add user_id %s to skippedlist : skipped.txt ... \033[0m'
+    #                      % user_id)
             # Append user_is to the end of skipped.txt
-            file.write(str(user_id) + "\n")
-            console_print(self.verbosity, 'Done adding user_id to skipped.txt')
+    #        file.write(str(user_id) + "\n")
+    #        console_print(self.verbosity, 'Done adding user_id to skipped.txt')
     return
 
 
